@@ -1,0 +1,11 @@
+|Full_Adder_Structural
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+c_in => xor2.IN1
+c_in => and2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+

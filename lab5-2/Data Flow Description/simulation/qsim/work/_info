@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Code/Experiment on Digital System/lab5-2/Data Flow Description/simulation/qsim
+vFull_Adder_Data_Flow
+Z1 !s110 1697469301
+!i10b 1
+!s100 jhi`o6CS12G?d]AK<;FQT0
+IJ1n=Qo6;1zCln2AbW_hA`1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1697469300
+8Full_Adder_Data_Flow.vo
+FFull_Adder_Data_Flow.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1697469301.000000
+!s107 Full_Adder_Data_Flow.vo|
+!s90 -work|work|Full_Adder_Data_Flow.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@full_@adder_@data_@flow
+vFull_Adder_Data_Flow_vlg_vec_tst
+R1
+!i10b 1
+!s100 ]eZ3g?W;^F?fQmBP_>Egh2
+IiePX4z;:K;01_`8ALSd^E1
+R2
+R0
+w1697469298
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@full_@adder_@data_@flow_vlg_vec_tst

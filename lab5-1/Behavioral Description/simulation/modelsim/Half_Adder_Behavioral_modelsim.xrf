@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Code/Experiment on Digital System/lab5-1/Behavioral Description/Half_Adder_Behavioral.v
+source_file = 1, C:/Code/Experiment on Digital System/lab5-1/Behavioral Description/db/Half_Adder_Behavioral.cbx.xml
+design_name = Half_Adder_Behavioral
+instance = comp, \sum~output , sum~output, Half_Adder_Behavioral, 1
+instance = comp, \carry~output , carry~output, Half_Adder_Behavioral, 1
+instance = comp, \b~input , b~input, Half_Adder_Behavioral, 1
+instance = comp, \a~input , a~input, Half_Adder_Behavioral, 1
+instance = comp, \sum~0 , sum~0, Half_Adder_Behavioral, 1
+instance = comp, \carry~0 , carry~0, Half_Adder_Behavioral, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Half_Adder_Behavioral, 1

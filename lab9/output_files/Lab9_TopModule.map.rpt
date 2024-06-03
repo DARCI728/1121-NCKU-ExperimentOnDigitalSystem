@@ -1,0 +1,368 @@
+Analysis & Synthesis report for Lab9_TopModule
+Wed Nov 22 20:31:14 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: MooreMachine:u_moore_machine
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Nov 22 20:31:14 2023       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Lab9_TopModule                              ;
+; Top-level Entity Name           ; Lab9_TopModule                              ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 36                                          ;
+; Total pins                      ; 10                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEFA4F23C7        ;                    ;
+; Top-level entity name                                                           ; Lab9_TopModule     ; Lab9_TopModule     ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 14          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-14        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; Lab9_TopModule.v                 ; yes             ; User Verilog HDL File  ; C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 33          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 59          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 6           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 3           ;
+;     -- <=3 input functions                  ; 50          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 36          ;
+;                                             ;             ;
+; I/O pins                                    ; 10          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 36          ;
+; Total fan-out                               ; 315         ;
+; Average fan-out                             ; 2.74        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Entity Name      ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+------------------+--------------+
+; |Lab9_TopModule                           ; 59 (0)              ; 36 (0)                    ; 0                 ; 0          ; 10   ; 0            ; |Lab9_TopModule                                      ; Lab9_TopModule   ; work         ;
+;    |FrequencyDivider:u_frequency_divider| ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |Lab9_TopModule|FrequencyDivider:u_frequency_divider ; FrequencyDivider ; work         ;
+;    |MooreMachine:u_moore_machine|         ; 6 (6)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab9_TopModule|MooreMachine:u_moore_machine         ; MooreMachine     ; work         ;
+;    |SevenDisplay:u_seven_display|         ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Lab9_TopModule|SevenDisplay:u_seven_display         ; SevenDisplay     ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                              ;
++-----------------------------------------------------+-----------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal               ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------------+------------------------+
+; SevenDisplay:u_seven_display|out[0]                 ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; SevenDisplay:u_seven_display|out[1]                 ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; SevenDisplay:u_seven_display|out[2]                 ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; SevenDisplay:u_seven_display|out[3]                 ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; SevenDisplay:u_seven_display|out[4]                 ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; SevenDisplay:u_seven_display|out[5]                 ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; SevenDisplay:u_seven_display|out[6]                 ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; MooreMachine:u_moore_machine|next_state[1]          ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; MooreMachine:u_moore_machine|next_state[2]          ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; MooreMachine:u_moore_machine|next_state[0]          ; SevenDisplay:u_seven_display|Mux5 ; yes                    ;
+; Number of user-specified and inferred latches = 10  ;                                   ;                        ;
++-----------------------------------------------------+-----------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 36    ;
+; Number of registers using Synchronous Clear  ; 32    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 36    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MooreMachine:u_moore_machine ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; s0             ; 000   ; Unsigned Binary                                  ;
+; s1             ; 001   ; Unsigned Binary                                  ;
+; s2             ; 010   ; Unsigned Binary                                  ;
+; s3             ; 011   ; Unsigned Binary                                  ;
+; s4             ; 100   ; Unsigned Binary                                  ;
+; s5             ; 101   ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 36                          ;
+;     CLR               ; 4                           ;
+;     CLR SCLR          ; 32                          ;
+; arriav_lcell_comb     ; 59                          ;
+;     arith             ; 32                          ;
+;         1 data inputs ; 32                          ;
+;     normal            ; 27                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 3                           ;
+;         6 data inputs ; 6                           ;
+; boundary_port         ; 10                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.84                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed Nov 22 20:31:08 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab9_TopModule -c Lab9_TopModule
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 4 design units, including 4 entities, in source file lab9_topmodule.v
+    Info (12023): Found entity 1: Lab9_TopModule File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 3
+    Info (12023): Found entity 2: FrequencyDivider File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 31
+    Info (12023): Found entity 3: MooreMachine File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 53
+    Info (12023): Found entity 4: SevenDisplay File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 95
+Info (12127): Elaborating entity "Lab9_TopModule" for the top level hierarchy
+Info (12128): Elaborating entity "FrequencyDivider" for hierarchy "FrequencyDivider:u_frequency_divider" File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 15
+Info (12128): Elaborating entity "MooreMachine" for hierarchy "MooreMachine:u_moore_machine" File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 22
+Warning (10270): Verilog HDL Case Statement warning at Lab9_TopModule.v(71): incomplete case statement has no default case item File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+Warning (10240): Verilog HDL Always Construct warning at Lab9_TopModule.v(71): inferring latch(es) for variable "next_state", which holds its previous value in one or more paths through the always construct File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+Info (10041): Inferred latch for "next_state[0]" at Lab9_TopModule.v(71) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+Info (10041): Inferred latch for "next_state[1]" at Lab9_TopModule.v(71) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+Info (10041): Inferred latch for "next_state[2]" at Lab9_TopModule.v(71) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+Info (12128): Elaborating entity "SevenDisplay" for hierarchy "SevenDisplay:u_seven_display" File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 27
+Warning (10270): Verilog HDL Case Statement warning at Lab9_TopModule.v(100): incomplete case statement has no default case item File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Warning (10240): Verilog HDL Always Construct warning at Lab9_TopModule.v(100): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (10041): Inferred latch for "out[0]" at Lab9_TopModule.v(100) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (10041): Inferred latch for "out[1]" at Lab9_TopModule.v(100) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (10041): Inferred latch for "out[2]" at Lab9_TopModule.v(100) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (10041): Inferred latch for "out[3]" at Lab9_TopModule.v(100) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (10041): Inferred latch for "out[4]" at Lab9_TopModule.v(100) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (10041): Inferred latch for "out[5]" at Lab9_TopModule.v(100) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (10041): Inferred latch for "out[6]" at Lab9_TopModule.v(100) File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "SevenDisplay:u_seven_display|out[3]" merged with LATCH primitive "SevenDisplay:u_seven_display|out[0]" File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+Warning (13012): Latch SevenDisplay:u_seven_display|out[0] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[1] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch SevenDisplay:u_seven_display|out[1] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[2] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch SevenDisplay:u_seven_display|out[2] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[1] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch SevenDisplay:u_seven_display|out[4] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[2] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch SevenDisplay:u_seven_display|out[5] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[1] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch SevenDisplay:u_seven_display|out[6] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 100
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[2] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch MooreMachine:u_moore_machine|next_state[1] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[2] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch MooreMachine:u_moore_machine|next_state[2] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[2] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Warning (13012): Latch MooreMachine:u_moore_machine|next_state[0] has unsafe behavior File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 71
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal MooreMachine:u_moore_machine|state[2] File: C:/Code/Experiment on Digital System/lab9/Lab9_TopModule.v Line: 66
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 62 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4892 megabytes
+    Info: Processing ended: Wed Nov 22 20:31:14 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
+
+

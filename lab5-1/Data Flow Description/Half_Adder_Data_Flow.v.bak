@@ -1,0 +1,8 @@
+module Half_Adder_Data_Flow(a, b,b sum, carry);
+	input a, b;
+	output sum, carry;
+	
+	assign sum = a ^ b;
+	assign carry = a & b;
+	
+endmodule 

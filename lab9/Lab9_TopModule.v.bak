@@ -1,0 +1,146 @@
+`define TimeExpire 32'd50000000
+
+module Lab9_TopModule(reset, in, clk, out);
+    input reset;
+	 input in;
+	 input clk;
+    wire divclk;
+    wire [2:0] state;
+    output [6:0] out;
+    
+    FrequencyDivider u_frequency_divider(
+        .reset(reset),
+        .clk(clk),
+        .divclk(divclk)
+    );
+
+    MooreMachine u_moore_machine(
+        .reset(reset),
+		  .in(in),
+        .divclk(divclk),
+        .state(state)
+    );
+
+    SevenDisplay u_seven_display(
+		  .state(state),
+        .out(out)
+    );
+
+endmodule
+
+module FrequencyDivider(reset, clk, divclk);
+	input reset, clk;
+	output reg divclk;
+	
+	reg [31:0] cnt;
+
+   always @(posedge clk or negedge reset) begin
+		if (!reset) begin
+			cnt <= 32'd0;
+			divclk <= 1'b0;
+      end else begin
+         if (cnt == `TimeExpire) begin 
+				cnt <= 32'd0;
+				divclk <= ~divclk;
+			end else begin
+				cnt <= cnt + 32'd1;
+			end
+      end
+   end
+	
+endmodule 
+
+module MooreMachine(reset, in, divclk, state);
+	input reset;
+	input in;
+	input divclk;
+	output reg [2:0] state;
+	reg [2:0] current_state, next_state;
+	
+	parameter s0 = 3'b000;
+	parameter s1 = 3'b001;
+	parameter s2 = 3'b010;
+	parameter s3 = 3'b011;
+	parameter s4 = 3'b100;
+	parameter s5 = 3'b101;
+
+	always @(posedge clk or negedge reset) begin
+		if (!rst) begin
+			current_state <= s0;
+		end else begin
+			current_state <= next_state;
+		end
+	end
+
+	always @(*) begin
+		case(current_state)
+			s0: begin
+				state <= 3'b000;
+				if(!in) begin 
+					next_state <= s1;
+				end else begin
+					next_state <= s3;
+				end
+			end
+			s1: begin
+				state <= 3'b001;
+				if(!in) begin 
+					next_state <= s2;
+				end else begin
+					next_state <= s5;
+				end
+			end
+			s2: begin
+				state <= 3'b010;
+				if(!in) begin 
+					next_state <= s3;
+				end else begin
+					next_state <= s0;
+				end
+			end
+			s3: begin
+				state <= 3'b011;
+				if(!in) begin 
+					next_state <= s4;
+				end else begin
+					next_state <= s1;
+				end
+			end
+			s4: begin
+				s4: state <= 3'b100;
+				if(!in) begin 
+					next_state <= s5;
+				end else begin
+					next_state <= s2;
+				end
+			end
+			s5: begin
+				state <= 3'b101;
+				if(!in) begin 
+					next_state <= s0;
+				end else begin
+					next_state <= s4;
+				end
+			end
+		endcase
+	end
+
+endmodule
+
+module SevenDisplay(state, out);
+	input [2:0] state;
+	output reg [6:0] out;
+	
+	always @(*) begin
+		case(state)
+			3'b000: out = 7'b1000000;
+			3'b001: out = 7'b1111001;
+			3'b010: out = 7'b0100100;
+			3'b011: out = 7'b0110000;
+			3'b100: out = 7'b0011001;
+			3'b101: out = 7'b0010010;
+			default: out = 7'b1111111;
+		endcase
+	end 
+
+endmodule 

@@ -1,0 +1,17 @@
+module SpecialFuncMultiplier(in,out);
+	input [3:0] in;
+	output [6:0] out;
+	
+	always @(*) begin
+		if (0 <= in && in <= 2) begin
+			out = in;
+		end else if (3 <= in && in <= 5) begin
+			out = in * 2 + 1;
+		end else if (6 <= in && in <= 8) begin
+			out = in * 2 -1;
+		end else begin
+			out = 0;
+		end
+	end
+	
+endmodule 

@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -6.160
+TNS   : -297.459
+
+Type  : Slow 1100mV 85C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -3.057
+TNS   : -43.531
+
+Type  : Slow 1100mV 85C Model Setup 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : -2.818
+TNS   : -10.456
+
+Type  : Slow 1100mV 85C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : -1.969
+TNS   : -6.925
+
+Type  : Slow 1100mV 85C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -0.912
+TNS   : -0.912
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : 0.833
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.841
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.651
+TNS   : -72.251
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -0.538
+TNS   : -17.013
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : -0.538
+TNS   : -3.080
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -6.338
+TNS   : -297.599
+
+Type  : Slow 1100mV 0C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -2.898
+TNS   : -42.081
+
+Type  : Slow 1100mV 0C Model Setup 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : -2.777
+TNS   : -10.478
+
+Type  : Slow 1100mV 0C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : -1.986
+TNS   : -7.100
+
+Type  : Slow 1100mV 0C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -0.840
+TNS   : -0.840
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.724
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : 0.877
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.706
+TNS   : -74.594
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -0.538
+TNS   : -17.008
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : -0.538
+TNS   : -3.088
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -3.278
+TNS   : -105.976
+
+Type  : Fast 1100mV 85C Model Setup 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : -1.516
+TNS   : -4.441
+
+Type  : Fast 1100mV 85C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -1.291
+TNS   : -16.217
+
+Type  : Fast 1100mV 85C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : -0.650
+TNS   : -2.252
+
+Type  : Fast 1100mV 85C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -0.556
+TNS   : -0.556
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : 0.282
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.613
+TNS   : -9.822
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : 0.131
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.958
+TNS   : -90.015
+
+Type  : Fast 1100mV 0C Model Setup 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : -1.325
+TNS   : -3.890
+
+Type  : Fast 1100mV 0C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -1.087
+TNS   : -13.768
+
+Type  : Fast 1100mV 0C Model Setup 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : -0.560
+TNS   : -1.917
+
+Type  : Fast 1100mV 0C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : -0.525
+TNS   : -0.528
+
+Type  : Fast 1100mV 0C Model Hold 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.119
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.584
+TNS   : -9.997
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_1Hz'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk_10000Hz'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'TrafficLightFSM:u_traffic_light_fsm|state[0]'
+Slack : 0.448
+TNS   : 0.000
+
+------------------------------------------------------------

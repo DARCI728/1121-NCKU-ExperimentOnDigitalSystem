@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Code/Experiment on Digital System/lab5-1/Structural Description/Half_Adder_Structural.v
+source_file = 1, C:/Code/Experiment on Digital System/lab5-1/Structural Description/db/Half_Adder_Structural.cbx.xml
+design_name = Half_Adder_Structural
+instance = comp, \sum~output , sum~output, Half_Adder_Structural, 1
+instance = comp, \carry~output , carry~output, Half_Adder_Structural, 1
+instance = comp, \b~input , b~input, Half_Adder_Structural, 1
+instance = comp, \a~input , a~input, Half_Adder_Structural, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Half_Adder_Structural, 1

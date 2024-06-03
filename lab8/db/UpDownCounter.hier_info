@@ -1,0 +1,116 @@
+|UpDownCounter
+reset => reset.IN2
+upDown => upDown.IN1
+clk => clk.IN1
+out[0] << SevenDisplay:u_seven_display.out
+out[1] << SevenDisplay:u_seven_display.out
+out[2] << SevenDisplay:u_seven_display.out
+out[3] << SevenDisplay:u_seven_display.out
+out[4] << SevenDisplay:u_seven_display.out
+out[5] << SevenDisplay:u_seven_display.out
+out[6] << SevenDisplay:u_seven_display.out
+
+
+|UpDownCounter|FrequencyDivider:u_frequency_divider
+reset => div_clock~reg0.ACLR
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => count[2].ACLR
+reset => count[3].ACLR
+reset => count[4].ACLR
+reset => count[5].ACLR
+reset => count[6].ACLR
+reset => count[7].ACLR
+reset => count[8].ACLR
+reset => count[9].ACLR
+reset => count[10].ACLR
+reset => count[11].ACLR
+reset => count[12].ACLR
+reset => count[13].ACLR
+reset => count[14].ACLR
+reset => count[15].ACLR
+reset => count[16].ACLR
+reset => count[17].ACLR
+reset => count[18].ACLR
+reset => count[19].ACLR
+reset => count[20].ACLR
+reset => count[21].ACLR
+reset => count[22].ACLR
+reset => count[23].ACLR
+reset => count[24].ACLR
+reset => count[25].ACLR
+reset => count[26].ACLR
+reset => count[27].ACLR
+reset => count[28].ACLR
+reset => count[29].ACLR
+reset => count[30].ACLR
+reset => count[31].ACLR
+clock => div_clock~reg0.CLK
+clock => count[0].CLK
+clock => count[1].CLK
+clock => count[2].CLK
+clock => count[3].CLK
+clock => count[4].CLK
+clock => count[5].CLK
+clock => count[6].CLK
+clock => count[7].CLK
+clock => count[8].CLK
+clock => count[9].CLK
+clock => count[10].CLK
+clock => count[11].CLK
+clock => count[12].CLK
+clock => count[13].CLK
+clock => count[14].CLK
+clock => count[15].CLK
+clock => count[16].CLK
+clock => count[17].CLK
+clock => count[18].CLK
+clock => count[19].CLK
+clock => count[20].CLK
+clock => count[21].CLK
+clock => count[22].CLK
+clock => count[23].CLK
+clock => count[24].CLK
+clock => count[25].CLK
+clock => count[26].CLK
+clock => count[27].CLK
+clock => count[28].CLK
+clock => count[29].CLK
+clock => count[30].CLK
+clock => count[31].CLK
+div_clock <= div_clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UpDownCounter|Counter:u_counter
+reset => count[0]~reg0.ACLR
+reset => count[1]~reg0.ACLR
+reset => count[2]~reg0.ACLR
+reset => count[3]~reg0.ACLR
+div_clock => count[0]~reg0.CLK
+div_clock => count[1]~reg0.CLK
+div_clock => count[2]~reg0.CLK
+div_clock => count[3]~reg0.CLK
+up_down => count.OUTPUTSELECT
+up_down => count.OUTPUTSELECT
+up_down => count.OUTPUTSELECT
+up_down => count.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UpDownCounter|SevenDisplay:u_seven_display
+count[0] => Decoder0.IN3
+count[1] => Decoder0.IN2
+count[2] => Decoder0.IN1
+count[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+|Half_Adder_Structural
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+sum <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+carry <= and1.DB_MAX_OUTPUT_PORT_TYPE
+
+

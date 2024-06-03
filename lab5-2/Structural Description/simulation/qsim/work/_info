@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Code/Experiment on Digital System/lab5-2/Structural Description/simulation/qsim
+vFull_Adder_Structural
+Z1 !s110 1697470084
+!i10b 1
+!s100 NJ4V7aK>PjAo16]Hd]UIk1
+IF=E[Pk[@^lBm5cJ6DPoVg0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1697470083
+8Full_Adder_Structural.vo
+FFull_Adder_Structural.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1697470083.000000
+!s107 Full_Adder_Structural.vo|
+!s90 -work|work|Full_Adder_Structural.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@full_@adder_@structural
+vFull_Adder_Structural_vlg_vec_tst
+R1
+!i10b 1
+!s100 =HDo8WSTBN>Tz^b>dVaC@2
+IgAGPgLib7i]NX@T55gc[P1
+R2
+R0
+w1697470081
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1697470084.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@full_@adder_@structural_vlg_vec_tst

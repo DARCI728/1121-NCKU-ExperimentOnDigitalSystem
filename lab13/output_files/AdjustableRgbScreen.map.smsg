@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at AdjustableRgbScreen.v(99): always construct contains both blocking and non-blocking assignments File: C:/Code/Experiment on Digital System/lab13/AdjustableRgbScreen.v Line: 99

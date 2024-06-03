@@ -1,0 +1,11 @@
+module AdjustableRgbScreen(
+	input rst, clk,
+	input btn_r, btn_g, btn_b,
+	output vga_h, vga_v,
+	output [3:0] vga_r, vga_g, vga_b
+);
+	
+	
+
+endmodule
+

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Code/Experiment on Digital System/lab5-1/Data Flow Description/simulation/qsim
+vHalf_Adder_Data_Flow
+Z1 !s110 1697466432
+!i10b 1
+!s100 JoWFeoX28<dT:0>4=NAgO2
+I2bMMCjO_W]EB3_bXIU85o2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1697466431
+8Half_Adder_Data_Flow.vo
+FHalf_Adder_Data_Flow.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1697466431.000000
+!s107 Half_Adder_Data_Flow.vo|
+!s90 -work|work|Half_Adder_Data_Flow.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@half_@adder_@data_@flow
+vHalf_Adder_Data_Flow_vlg_vec_tst
+R1
+!i10b 1
+!s100 1hPjaV9N6FJoDf_:oji`m3
+I>M7e<lRNdGLkLAU<g<1ZO0
+R2
+R0
+w1697466429
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1697466432.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@half_@adder_@data_@flow_vlg_vec_tst

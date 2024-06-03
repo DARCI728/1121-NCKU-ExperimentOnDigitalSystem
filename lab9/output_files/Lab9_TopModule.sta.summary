@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -5.842
+TNS   : -146.613
+
+Type  : Slow 1100mV 85C Model Setup 'MooreMachine:u_moore_machine|state[1]'
+Slack : -2.936
+TNS   : -23.051
+
+Type  : Slow 1100mV 85C Model Setup 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : -0.720
+TNS   : -1.891
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'MooreMachine:u_moore_machine|state[1]'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -38.559
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : -0.538
+TNS   : -2.392
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'MooreMachine:u_moore_machine|state[1]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -5.908
+TNS   : -144.468
+
+Type  : Slow 1100mV 0C Model Setup 'MooreMachine:u_moore_machine|state[1]'
+Slack : -2.966
+TNS   : -23.028
+
+Type  : Slow 1100mV 0C Model Setup 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : -0.672
+TNS   : -1.720
+
+Type  : Slow 1100mV 0C Model Hold 'MooreMachine:u_moore_machine|state[1]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.538
+TNS   : -39.559
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : -0.538
+TNS   : -2.361
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'MooreMachine:u_moore_machine|state[1]'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -3.209
+TNS   : -51.981
+
+Type  : Fast 1100mV 85C Model Setup 'MooreMachine:u_moore_machine|state[1]'
+Slack : -1.288
+TNS   : -8.550
+
+Type  : Fast 1100mV 85C Model Setup 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : -0.504
+TNS   : -1.436
+
+Type  : Fast 1100mV 85C Model Hold 'MooreMachine:u_moore_machine|state[1]'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.272
+TNS   : -4.438
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'MooreMachine:u_moore_machine|state[1]'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.874
+TNS   : -43.884
+
+Type  : Fast 1100mV 0C Model Setup 'MooreMachine:u_moore_machine|state[1]'
+Slack : -1.142
+TNS   : -7.640
+
+Type  : Fast 1100mV 0C Model Setup 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : -0.487
+TNS   : -1.385
+
+Type  : Fast 1100mV 0C Model Hold 'MooreMachine:u_moore_machine|state[1]'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.281
+TNS   : -4.659
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FrequencyDivider:u_frequency_divider|divclk'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'MooreMachine:u_moore_machine|state[1]'
+Slack : 0.457
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,17 @@
+module Encoder(input in, output out, output valid);
+	input [7:0] in;
+	output reg [2:0] out;
+	output reg valid;
+	
+always @(*) begin
+	case (in)
+		8'b00000001':
+			out <= 3'b000';
+			valid = 1;
+		default: 
+			data_out <= 3'b000;
+			valid = 1;
+	endcase 
+end
+
+endmodule 
